@@ -1,4 +1,6 @@
 # dotnetAuth
 
-#dotnet new mvc -n dotnetAuthTraining
-#cd dotnetAuthTraining
+#Instalasi<br>
+dotnet new mvc -n dotnetAuthTraining<br>
+#login ke folder <br>
+cd dotnetAuthTraining
