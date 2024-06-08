@@ -1,6 +1,9 @@
-# dotnetAuth
+# springboot_restapi
+Demo project for Spring Boot with swagger and cors setting and database postgres
 
-#Instalasi<br>
-dotnet new mvc -o dotnetAuth<br>
-#login ke folder <br>
-cd dotnetAuth
+``using postgres with auto generate table``
+
+``JPA repository``
+
+``using class repository and interface``
+
