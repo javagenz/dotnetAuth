@@ -1,0 +1,23 @@
+@model UserDepartmentViewModel
+@{
+    var departments = ViewBag.Department as SelectList ?? new SelectList(new List<Department>(), "IdDepartment", "NameDepartment");
+}
+
+<h1>Create User</h1>
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="User.Name"></label>
+        <input asp-for="User.Name" />
+    </div>
+    <div>
+        <label asp-for="User.Email"></label>
+        <input asp-for="User.Email" />
+    </div>
+    <div>
+        <label asp-for="User.DepartmentId">Department</label>
+        <select asp-for="User.DepartmentId" asp-items="@departments"></select>
+    </div>
+    <button type="submit">Create</button>
+</form>
+<a href="/User">Back to List</a>
+

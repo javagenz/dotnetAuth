@@ -1,0 +1,83 @@
+﻿@model RegisterModel
+@{
+    ViewData["Title"] = "Register Page";
+}
+
+<div class="div">
+    <div class="container">
+        <div class="div-2">
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&"
+                class="img" />
+            <div class="div-3">
+                <form method="post" action="/Home/Register-Action">
+                    <div class="div-4">
+                        <div class="card-header">
+                            <img loading="lazy"
+                                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&"
+                                class="img-2" />
+                            <div class="div-5">KEMENTRIAN KEUANGAN</div>
+                            <div class="div-6">SEKRETARIAT JENDRAL</div>
+                            <div class="div-7">SIPN</div>
+                        </div>
+                        <div class="input-container">
+                            <img loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/617a38b568aaf31062f7197e0aae5d496eeb9be6d676c9e8a019f5c453b9981b?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&"
+                                class="input-icon" />
+                            <input type="text" class="input-field" asp-for="Identity"
+                                placeholder="Identity Number (NPWP/NIB)" required />
+                        </div>
+                        @* <div class="div-10">&gt; Search results based on (NPWP/NIB)</div> *@
+                        <div class="input-container">
+                            <img loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/b3aeff3678ebe87c5c601541c7392af44f4cd2a17d7e676713009eb4a6dda9cb?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&"
+                                class="input-icon" />
+                            <input class="input-field" asp-for="PhoneNumber" placeholder="Nomor Telepon" required />
+                        </div>
+                        <div class="input-container">
+                            <img loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/507ac1e824ff0b556980881a81a589680b933b65f573f52ad15ba9ed404bc933?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&"
+                                class="input-icon" />
+                            <input class="input-field" asp-for="Email" placeholder="e-mail" required/>
+                        </div>
+                        <div class="input-container">
+                            <img loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/e257f2a283d4750b38e92c2533c1a66eb75a9fa66b428654e36ba5dd1ea90f2c?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&"
+                                class="input-icon" />
+                            <input class="input-field" asp-for="Username" placeholder="Username" required/>
+                        </div>
+                        <div class="div-17">
+                            <div class="input-container">
+                                <img loading="lazy"
+                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/7227245ba96cc8c45160cb42e7ef13cb4aa469ca8fb9b4ed17e0c9441156fa60?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&"
+                                    class="input-icon" />
+                                <input class="input-field" asp-for="Password" placeholder="Password" type="password" required/>
+                            </div>
+                            <div class="input-container">
+                                <img loading="lazy"
+                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/7227245ba96cc8c45160cb42e7ef13cb4aa469ca8fb9b4ed17e0c9441156fa60?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&"
+                                    class="input-icon" />
+                                <input class="input-field" asp-for="Password" placeholder="Konfirmasi Password"
+                                    type="password" required />
+                            </div>
+                        </div>
+                        <div class="div-22">
+                            <button type="submit" class="div-23">
+                                <img loading="lazy"
+                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/42b10fee58a5923f39bbc1993ad300815be8a3c174c81f7bf854cee287f8f0d5?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&"
+                                    class="img-9" />
+                                <div class="div-24">Daftar</div>
+                            </button>
+                            <button class="div-25">
+                                <img loading="lazy"
+                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/84d3ef28ae32f80e84afeec16b06af774f7a1914ee069868cb0859268ec9f11f?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&"
+                                    class="img-10" />
+                                <div class="div-26">Batal</div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

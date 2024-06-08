@@ -1,0 +1,56 @@
+﻿@model LoginModel
+@{
+    ViewData["Title"] = "Login Page";
+}
+
+<div class="div">
+    <div class="container">
+        <div class="div-2">
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/586b89540c5b558e6d8da45f3af453c3898f2df7e0fe0f8ecc7ce9e173e91dbe?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&"
+                class="img" />
+            <div class="div-3">
+                <div class="card-header">
+                    <img loading="lazy"
+                        srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/50c6c260324ce585fe56eced1b0292eac04eeaa98d51dcd9da7e1af6ece7f436?apiKey=d20e9c94b7d84fc1a58e2a177cbb4ca0&"
+                        class="img-2" />
+                    <div class="div-4">KEMENTRIAN KEUANGAN</div>
+                    <div class="div-5">SEKRETARIAT JENDRAL</div>
+                    <div class="div-6">SIPN</div>
+                </div>
+                <form method="post" action="/Home/Login-Action">
+                    <div class="form-container">
+                        <label asp-for="Email" class="div-7">Email atau Nomor Telepon
+                        </label>
+                        <input asp-for="Email" type="text" required class="login-input"
+                            placeholder="Email atau Nomor Telepon" />
+                        <label asp-for="Password" class="div-9">Password</label>
+                        <input asp-for="Password" type="password" required class="login-input"
+                            placeholder="Masukkan Password" />
+                        <div class="div-13">
+                            <div class="div-14">
+                                <input type="checkbox" class="div-15">
+                                </input>
+                                <label class="div-18">Ingat Saya
+                                </label>
+                                <div class="div-19">Lupa password?</div>
+                            </div>
+                        </div>
+                        <button type="submit" class="div-20">Sign in</button>
+                    </div>
+                </form>
+                <div class="div-21">
+                    <div class="div-22">Tidak punya akun?</div>
+                    <a asp-action="Register" asp-controller="Home" class="div-23">Daftar sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* @if (Model.ErrorMessage != null)
+{
+<div class="alert alert-danger">
+@Model.ErrorMessage
+</div>
+} *@
