@@ -1,4 +1,4 @@
 # dotnetAuth
 
-dotnet new mvc -n dotnetAuthTraining
-cd dotnetAuthTraining
+#dotnet new mvc -n dotnetAuthTraining
+#cd dotnetAuthTraining
